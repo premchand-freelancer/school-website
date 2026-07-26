@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,6 +36,7 @@
         <a class="active" href="#about">About</a>
         <a href="#academics">Academics</a>
         <a href="#life">Student Life</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#news">News &amp; Events</a>
         <a href="#contact">Contact</a>
         <a class="nav-cta" href="#admissions">Apply now <span aria-hidden="true">→</span></a>
@@ -46,30 +48,34 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-backdrop"></div>
       <div class="container hero-grid">
-        <div class="hero-content">
+        <div class="hero-content fade-in-up">
           <p class="eyebrow light"><span></span> Est. 1987 · Bangalore, India</p>
           <h1 id="hero-title">A place to <em>begin</em><br />your remarkable story.</h1>
           <p class="hero-copy">Northfield is a future-focused learning community where every child is known, challenged, and inspired to make a difference.</p>
           <div class="hero-actions">
-            <a class="button button-gold" href="#admissions">Discover Northfield <span aria-hidden="true">→</span></a>
-            <button class="watch-story" type="button" data-modal-open="story-modal"><span class="play-icon" aria-hidden="true">▶</span> Watch our story</button>
+            <a class="button button-gold button-hover" href="#admissions">Discover Northfield <span aria-hidden="true">→</span></a>
+            <button class="watch-story button-hover" type="button" data-modal-open="story-modal"><span class="play-icon" aria-hidden="true">▶</span> Watch our story</button>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Upcoming campus visit">
+        <aside class="hero-card fade-in-right" aria-label="Upcoming campus visit">
           <p class="card-label">Next open house</p>
           <h2>See possibility<br />in action.</h2>
           <div class="open-house-date"><span>18</span><p>October<br /><b>Saturday · 10 AM</b></p></div>
-          <a href="#admissions">Reserve your place <span aria-hidden="true">↗</span></a>
+          <a href="#admissions" class="card-link">Reserve your place <span aria-hidden="true">↗</span></a>
         </aside>
       </div>
       <div class="hero-bottom container">
         <a href="#about" class="scroll-cue"><span></span> Explore our school</a>
-        <div class="hero-stats"><p><b>1,200</b><span>students</span></p><p><b>1:12</b><span>teacher ratio</span></p><p><b>37</b><span>years of purpose</span></p></div>
+        <div class="hero-stats">
+          <p><b class="counter" data-count="1200" data-suffix="">0</b><span>students</span></p>
+          <p><b>1:12</b><span>teacher ratio</span></p>
+          <p><b class="counter" data-count="37" data-suffix="">0</b><span>years of purpose</span></p>
+        </div>
       </div>
     </section>
 
     <section class="intro section" id="about">
-      <div class="container intro-grid">
+      <div class="container intro-grid fade-in">
         <p class="eyebrow"><span></span> Welcome to Northfield</p>
         <div>
           <h2>More than an education.<br /><em>A strong foundation for life.</em></h2>
@@ -80,61 +86,179 @@
     </section>
 
     <section class="experience" id="academics">
-      <div class="experience-photo" role="img" aria-label="Students working together in a science class"></div>
-      <div class="experience-content">
+      <div class="experience-photo fade-in-left" role="img" aria-label="Students working together in a science class"></div>
+      <div class="experience-content fade-in-right">
         <p class="eyebrow light"><span></span> Learning, reimagined</p>
         <h2>A full world of<br /><em>possibility.</em></h2>
         <p>Our curriculum blends academic rigour with creativity, inquiry, wellbeing, and service. The result is learning that matters long after the lesson ends.</p>
         <div class="program-list">
-          <a href="#admissions"><span>01</span> Early Years <b>→</b></a>
-          <a href="#admissions"><span>02</span> Primary School <b>→</b></a>
-          <a href="#admissions"><span>03</span> Middle School <b>→</b></a>
-          <a href="#admissions"><span>04</span> Senior School <b>→</b></a>
+          <a href="#admissions" class="program-item"><span>01</span> Early Years <b>→</b></a>
+          <a href="#admissions" class="program-item"><span>02</span> Primary School <b>→</b></a>
+          <a href="#admissions" class="program-item"><span>03</span> Middle School <b>→</b></a>
+          <a href="#admissions" class="program-item"><span>04</span> Senior School <b>→</b></a>
         </div>
       </div>
     </section>
 
     <section class="pillars section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading fade-in">
           <div><p class="eyebrow"><span></span> The Northfield difference</p><h2>Education with <em>heart.</em></h2></div>
           <p>From first friendships to final exams, every part of school life is intentionally designed for meaningful growth.</p>
         </div>
         <div class="pillar-grid">
-          <article class="pillar-card card-one"><span class="card-number">01</span><div class="card-icon">✦</div><h3>Bold curiosity</h3><p>Questions are our starting point. We encourage students to investigate, imagine, and create.</p><a href="#contact" aria-label="Learn about bold curiosity">Learn more <span>→</span></a></article>
-          <article class="pillar-card card-two"><span class="card-number">02</span><div class="card-icon">⌁</div><h3>True belonging</h3><p>A vibrant community where every learner is seen, valued, and supported to thrive.</p><a href="#contact" aria-label="Learn about true belonging">Learn more <span>→</span></a></article>
-          <article class="pillar-card card-three"><span class="card-number">03</span><div class="card-icon">◒</div><h3>Purposeful action</h3><p>We turn empathy into action through service, leadership, and real-world learning.</p><a href="#contact" aria-label="Learn about purposeful action">Learn more <span>→</span></a></article>
+          <article class="pillar-card card-one fade-in-up">
+            <span class="card-number">01</span>
+            <div class="card-icon">✦</div>
+            <h3>Bold curiosity</h3>
+            <p>Questions are our starting point. We encourage students to ask why, explore deeply, and discover their passions through hands-on learning.</p>
+          </article>
+          <article class="pillar-card card-two fade-in-up">
+            <span class="card-number">02</span>
+            <div class="card-icon">⌁</div>
+            <h3>True belonging</h3>
+            <p>A vibrant community where every learner is seen, valued, and supported to grow into confident individuals who celebrate diversity.</p>
+          </article>
+          <article class="pillar-card card-three fade-in-up">
+            <span class="card-number">03</span>
+            <div class="card-icon">◒</div>
+            <h3>Purposeful action</h3>
+            <p>We turn empathy into action through service, leadership, and real-world projects that make a positive impact in our world.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="numbers section">
-      <div class="container number-grid">
+      <div class="container number-grid fade-in">
         <div><p class="eyebrow light"><span></span> By the numbers</p><h2>Small moments.<br /><em>Big outcomes.</em></h2></div>
         <div class="number-cards">
-          <div><strong data-count="98" data-suffix="%">0%</strong><span>graduates receive their first-choice university offer</span></div>
-          <div><strong data-count="62" data-suffix="+">0+</strong><span>clubs, teams and student-led experiences</span></div>
-          <div><strong data-count="28" data-suffix="">0</strong><span>nationalities in our welcoming community</span></div>
+          <div class="number-card-item">
+            <strong class="counter" data-count="98" data-suffix="%">0%</strong>
+            <span>graduates receive their first-choice university offer</span>
+          </div>
+          <div class="number-card-item">
+            <strong class="counter" data-count="62" data-suffix="+">0+</strong>
+            <span>clubs, teams and student-led experiences</span>
+          </div>
+          <div class="number-card-item">
+            <strong class="counter" data-count="28" data-suffix="">0</strong>
+            <span>nationalities in our welcoming community</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="campus section" id="life">
       <div class="container campus-layout">
-        <div class="campus-copy"><p class="eyebrow"><span></span> Beyond the classroom</p><h2>Every day brings<br /><em>something new.</em></h2><p>On the stage, in the studio, on the field, and out in the world—students find the spaces and people that bring their passions alive.</p><a class="button button-dark" href="#news">Explore student life <span aria-hidden="true">→</span></a></div>
-        <div class="campus-collage" aria-label="A collage of student experiences"><div class="collage-main" role="img" aria-label="Students playing football"></div><div class="collage-small" role="img" aria-label="Student painting in art class"></div><div class="floating-note"><span>“</span><p>School should feel like a place you can't wait to come back to.</p><b>— Anaya, Year 10</b></div></div>
+        <div class="campus-copy fade-in-left">
+          <p class="eyebrow"><span></span> Beyond the classroom</p>
+          <h2>Every day brings<br /><em>something new.</em></h2>
+          <p>On the stage, in the studio, on the field, and on the field trip, our students develop confidence, creativity, and community spirit through diverse experiences.</p>
+          <a class="button button-dark" href="#news">Explore student life <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="campus-collage fade-in-right" aria-label="A collage of student experiences">
+          <div class="collage-item collage-main" role="img" aria-label="Students playing football"></div>
+          <div class="collage-item collage-small-1" role="img" aria-label="Student artwork"></div>
+          <div class="collage-item collage-small-2" role="img" aria-label="Students in classroom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <p class="eyebrow"><span></span> From our community</p>
+            <h2>Voices of <em>impact.</em></h2>
+          </div>
+          <p>Hear from parents, students, and educators about their Northfield journey.</p>
+        </div>
+        <div class="testimonials-carousel fade-in">
+          <div class="testimonial-card active">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div>
+                <h3>Sarah Johnson</h3>
+                <p>Parent, Class of 2026</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Northfield has transformed how my child views learning. The teachers genuinely care, and the community feels like an extended family."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div>
+                <h3>Arjun Patel</h3>
+                <p>Student, Year 10</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"I came to Northfield unsure about myself. The school's emphasis on discovering our strengths helped me find my passion for environmental science."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div>
+                <h3>Dr. Priya Singh</h3>
+                <p>Educator, Mathematics Department</p>
+              </div>
+            </div>
+            <p class="testimonial-text">"Teaching at Northfield means I get to fuel curiosity every day. The collaborative culture here brings out the best in both students and staff."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-dot active" data-slide="0" aria-label="Testimonial 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="Testimonial 2"></button>
+          <button class="carousel-dot" data-slide="2" aria-label="Testimonial 3"></button>
+        </div>
       </div>
     </section>
 
     <section class="news section" id="news">
       <div class="container">
-        <div class="section-heading news-heading"><div><p class="eyebrow"><span></span> From our community</p><h2>Stories worth <em>sharing.</em></h2></div><a href="#contact" class="text-link">View all news <span aria-hidden="true">→</span></a></div>
+        <div class="section-heading news-heading fade-in">
+          <div>
+            <p class="eyebrow"><span></span> From our community</p>
+            <h2>Stories worth <em>sharing.</em></h2>
+          </div>
+          <a href="#contact" class="text-link">View all <span aria-hidden="true">→</span></a>
+        </div>
         <div class="news-grid">
-          <article class="featured-story"><div class="story-image story-main" role="img" aria-label="Students at a school assembly"></div><div class="story-body"><p class="story-meta">Community · 12 Sep 2026</p><h3>Celebrating the Class of 2026: a morning of gratitude and possibility</h3><a href="#contact">Read the story <span>→</span></a></div></article>
-          <div class="story-list">
-            <article><p class="story-meta">Student life · 04 Sep 2026</p><h3>Our young innovators bring home the regional design challenge</h3><a href="#contact" aria-label="Read young innovators story">→</a></article>
-            <article><p class="story-meta">Academics · 28 Aug 2026</p><h3>How Year 5 used storytelling to connect with our local history</h3><a href="#contact" aria-label="Read local history story">→</a></article>
-            <article><p class="story-meta">Campus · 19 Aug 2026</p><h3>New makerspace opens a door to even more hands-on learning</h3><a href="#contact" aria-label="Read makerspace story">→</a></article>
+          <article class="featured-story fade-in-left">
+            <div class="story-image story-main" role="img" aria-label="Students at a school assembly"></div>
+            <div class="story-body">
+              <p class="story-meta">Community · 15 Sep 2026</p>
+              <h3>Annual awards celebrate our diverse achievers</h3>
+              <p>From academics to arts, sports to service, we celebrated the remarkable accomplishments of our students at our annual recognition ceremony.</p>
+              <a href="#contact" class="text-link">Read full story <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <div class="story-list fade-in-right">
+            <article class="story-item">
+              <p class="story-meta">Student life · 04 Sep 2026</p>
+              <h3>Our young innovators bring home the regional design challenge</h3>
+              <a href="#contact" class="text-link" aria-label="Read young innovators story">→</a>
+            </article>
+            <article class="story-item">
+              <p class="story-meta">Academics · 28 Aug 2026</p>
+              <h3>How Year 5 used storytelling to connect with our local history</h3>
+              <a href="#contact" class="text-link" aria-label="Read local history story">→</a>
+            </article>
+            <article class="story-item">
+              <p class="story-meta">Campus · 19 Aug 2026</p>
+              <h3>New makerspace opens a door to even more hands-on learning</h3>
+              <a href="#contact" class="text-link" aria-label="Read makerspace story">→</a>
+            </article>
           </div>
         </div>
       </div>
@@ -142,13 +266,21 @@
 
     <section class="visit" id="admissions">
       <div class="visit-image" role="img" aria-label="Warm school library"></div>
-      <div class="visit-panel">
+      <div class="visit-panel fade-in-right">
         <p class="eyebrow light"><span></span> Begin your journey</p>
         <h2>Come see what<br /><em>could be.</em></h2>
         <p>The best way to understand Northfield is to experience it. Meet our people, explore our spaces, and ask every question.</p>
         <form class="visit-form" id="visit-form" novalidate>
           <label for="email">Your email address</label>
-          <div class="email-row"><input id="email" type="email" placeholder="name@email.com" required /><button type="submit" aria-label="Request a visit">→</button></div>
+          <div class="email-row">
+            <input id="email" type="email" placeholder="name@email.com" required />
+            <button type="submit" aria-label="Request a visit" class="submit-btn">
+              <span class="btn-text">→</span>
+              <span class="btn-loader" style="display: none;">
+                <i class="fas fa-spinner"></i>
+              </span>
+            </button>
+          </div>
           <p class="form-message" role="status" aria-live="polite"></p>
         </form>
         <small>By sharing your email, you agree to hear from Northfield Academy.</small>
@@ -163,17 +295,57 @@
       <a class="button button-outline" href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
     <div class="container footer-links">
-      <div><h3>Visit us</h3><p>18 Greenwood Lane<br />Whitefield, Bangalore 560066<br />India</p><a href="tel:+918044001200">+91 80 4400 1200</a></div>
-      <div><h3>Explore</h3><a href="#about">Our school</a><a href="#academics">Learning</a><a href="#life">Student life</a><a href="#news">News &amp; events</a></div>
-      <div><h3>Connect</h3><a href="#contact">Instagram</a><a href="#contact">LinkedIn</a><a href="#contact">YouTube</a><a href="#contact">Parent portal</a></div>
-      <div class="footer-newsletter"><h3>Stay in the know</h3><p>A short note from our community, once a month.</p><form id="footer-form"><div><input aria-label="Email for newsletter" type="email" placeholder="Email address" required /><button aria-label="Subscribe" type="submit">→</button></div><span class="footer-message" role="status"></span></form></div>
+      <div>
+        <h3>Visit us</h3>
+        <p>18 Greenwood Lane<br />Whitefield, Bangalore 560066<br />India</p>
+        <a href="tel:+918044001200">+91 80 4400 1200</a>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#about">Our school</a>
+        <a href="#academics">Learning</a>
+        <a href="#life">Student life</a>
+        <a href="#news">News &amp; events</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <a href="#contact" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#contact" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#contact" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="#contact" class="social-link"><i class="fas fa-lock"></i> Parent portal</a>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Stay in the know</h3>
+        <p>A short note from our community, once a month.</p>
+        <form id="footer-form">
+          <div>
+            <input aria-label="Email for newsletter" type="email" placeholder="your@email.com" required />
+            <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane"></i></button>
+          </div>
+          <p class="footer-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
-    <div class="container footer-bottom"><p>© 2026 Northfield Academy. All rights reserved.</p><div><a href="#contact">Privacy</a><a href="#contact">Accessibility</a><a href="#contact">Policies</a></div></div>
+    <div class="container footer-bottom">
+      <p>© 2026 Northfield Academy. All rights reserved.</p>
+      <div>
+        <a href="#contact">Privacy</a>
+        <a href="#contact">Accessibility</a>
+        <a href="#contact">Policies</a>
+      </div>
+    </div>
   </footer>
 
   <div class="modal" id="story-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="story-title">
-    <div class="modal-card"><button class="modal-close" type="button" data-modal-close aria-label="Close video">×</button><div class="video-placeholder"><span class="play-icon large" aria-hidden="true">▶</span><p>Northfield Academy</p></div><div class="modal-text"><p class="eyebrow"><span></span> Our story</p><h2 id="story-title">Learning with purpose, every day.</h2><p>At Northfield, education is about more than knowing the answer. It is about discovering the questions that make a meaningful life.</p></div></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close video">×</button>
+      <div class="video-placeholder">
+        <span class="play-icon large" aria-hidden="true">▶</span>
+        <p>Your school story video would play here</p>
+      </div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
